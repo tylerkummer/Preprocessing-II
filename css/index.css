@@ -168,7 +168,11 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.navbar {
+  justify-content: center;
+}
 .navbar a {
+  padding: 2rem;
   font-size: 1.8rem;
   text-decoration: none;
   color: black;
@@ -195,7 +199,6 @@ img {
   }
 }
 .home .welcome {
-  width: 100%;
   border-top: 2px dashed silver;
   border-bottom: 2px dashed silver;
 }
@@ -204,6 +207,13 @@ img {
 }
 .home .welcome p {
   margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  .home .welcome {
+    display: block;
+    padding: 0 10%;
+    width: 100%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
@@ -227,6 +237,16 @@ img {
     flex-direction: column;
     align-items: center;
   }
+  .home .content-section .text-content {
+    display: block;
+    padding: 0 10%;
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    display: block;
+    padding: 0 10%;
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -244,6 +264,16 @@ img {
   .home .inverse-content {
     flex-direction: column-reverse;
     align-items: center;
+  }
+  .home .inverse-content .text-content {
+    display: block;
+    padding: 0 10%;
+    width: 100%;
+  }
+  .home .inverse-content .img-content {
+    display: block;
+    padding: 0 10%;
+    width: 100%;
   }
 }
 .home .content-destination {
@@ -273,7 +303,10 @@ img {
 }
 @media (max-width: 500px) {
   .home .content-pick {
-    flex-direction: column;
-    align-items: center;
+    display: block;
+  }
+  .home .content-pick .destination {
+    padding: 0 10%;
+    width: 100%;
   }
 }
