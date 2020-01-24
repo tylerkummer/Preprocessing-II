@@ -168,9 +168,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-.navbar {
-  justify-content: center;
-}
 .navbar a {
   padding: 2rem;
   font-size: 1.8rem;
@@ -188,18 +185,23 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home header {
+.head {
+  border-bottom: 2px dashed silver;
+}
+.head header {
   display: flex;
-  margin: 3% 0;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 1% auto;
+  align-items: center;
 }
 @media (max-width: 500px) {
-  .home header {
+  .head header {
     flex-direction: column;
     align-items: center;
   }
 }
 .home .welcome {
-  border-top: 2px dashed silver;
   border-bottom: 2px dashed silver;
 }
 .home .welcome h2 {

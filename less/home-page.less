@@ -1,17 +1,23 @@
-.home {
+.head{
+  border-bottom: 2px dashed silver;
 
   header{
     display: flex;
-    margin: 3% 0;
-
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 1% auto;
+    align-items: center;
+  
     @media @mobile{
       flex-direction: column;
       align-items: center;
     }
   }
+}
+
+.home {
 
   .welcome{
-    border-top: 2px dashed silver;
     border-bottom: 2px dashed silver;
 
     h2{
